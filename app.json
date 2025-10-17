@@ -2,6 +2,7 @@
   "expo": {
     "name": "kavachasafe",
     "slug": "kavachasafe",
+    "scheme": "kavachasafe",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,17 +14,29 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "googleMapsApiKey": "AIzaSyAmAvlkOAwcvieDTi5h3MIfMKRY65KYR7U"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAmAvlkOAwcvieDTi5h3MIfMKRY65KYR7U"
+        }
+      },
+      "package": "com.saicharan_01.kavachasafe"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
   }
 }
